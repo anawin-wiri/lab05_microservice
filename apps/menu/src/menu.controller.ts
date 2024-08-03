@@ -3,7 +3,7 @@ import { MenuService } from './menu.service';
 
 @Controller()
 export class MenuController {
-  constructor(private readonly menuService: MenuService) { }
+  constructor(private readonly menuService: MenuService) {}
 
   @Get()
   getHello(): string {

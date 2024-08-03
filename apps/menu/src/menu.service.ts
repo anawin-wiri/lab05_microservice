@@ -21,5 +21,4 @@ export class MenuService {
   getMenu() {
     return this.menu;
   }
-
 }

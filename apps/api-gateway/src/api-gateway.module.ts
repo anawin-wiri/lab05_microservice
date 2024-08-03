@@ -8,4 +8,4 @@ import { HttpModule } from '@nestjs/axios';
   controllers: [ApiGatewayController],
   providers: [ApiGatewayService],
 })
-export class ApiGatewayModule { }
+export class ApiGatewayModule {}
