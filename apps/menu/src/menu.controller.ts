@@ -1,15 +1,9 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { MenuService } from './menu.service';
 
-@Controller()
+@Controller('menu')
 export class MenuController {
-  constructor(private readonly menuService: MenuService) {}
-
-  @Get()
-  getHello(): string {
-    return this.menuService.getHello();
-  }
-
+  constructor(private readonly menuService: MenuService) { }
   @Get()
   getMenu() {
     return this.menuService.getMenu();

@@ -5,7 +5,7 @@ import { firstValueFrom } from 'rxjs';
 
 @Controller()
 export class ApiGatewayController {
-  constructor(private httpService: HttpService) {}
+  constructor(private httpService: HttpService) { }
   @Get('menu')
   async getMenu() {
     const response = await firstValueFrom(

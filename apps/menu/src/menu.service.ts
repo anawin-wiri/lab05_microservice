@@ -2,10 +2,6 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 
 @Injectable()
 export class MenuService {
-  getHello(): string {
-    return 'Hello World!';
-  }
-
   private menu = [
     { id: 1, name: 'Pizza', price: 10.99 },
     { id: 2, name: 'Burger', price: 8.99 },
